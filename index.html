@@ -5,8 +5,21 @@
     <title>Форма авторизации</title>
     <link rel="stylesheet" href="./style.css">
    </head>
-  <body>
-    <div class="registration-cssave">
+
+  <script type="text/javascript">
+
+function isInternetExplorer() {
+    return window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
+}
+console.log(isInternetExplorer());
+
+
+if (isInternetExplorer() === true) {
+    alert('Браузер IE не поддерживается. Смените браузер.');
+}
+</script>
+    <body>
+        <div class="registration-cssave">
       <form align="center">
         <h3 class="text-center">Форма авторизации</h3>
         
@@ -91,5 +104,6 @@ clock();
         
       </form>
     </div>
+    
   </body>
 </html>
