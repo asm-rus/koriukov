@@ -44,7 +44,7 @@ if (isInternetExplorer() === true) {
             name="password"
             maxlength="20"
 			minlength="6"
-			pattern="^[a-zA-Z0-9]*$"
+			pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^\w\s]).{6,}"
             id="password"
             placeholder="Пароль"
             required
